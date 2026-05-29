@@ -1,2 +1,4 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
+Datasets/MultiClinSum/*.csv filter=lfs diff=lfs merge=lfs -text
+Datasets/BioASQ/*.json filter=lfs diff=lfs merge=lfs -text
 Datasets/MultiClinSum/multiclinsum_dataset.csv filter=lfs diff=lfs merge=lfs -text
