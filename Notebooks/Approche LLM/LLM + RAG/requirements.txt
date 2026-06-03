@@ -1,0 +1,40 @@
+# --- Core ---
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+pandas>=2.1.0
+numpy>=1.26.0
+
+# --- Phase 2 : data ---
+datasets>=2.16.0
+huggingface_hub>=0.20.0
+
+# --- Phase 3 : extractive baseline ---
+nltk>=3.8.1
+scikit-learn>=1.4.0
+networkx>=3.2          # TextRank graph
+sentence-transformers>=2.3.0   # for sentence embeddings in TextRank
+
+# --- Phase 4 : LLM via Ollama ---
+ollama>=0.1.7
+langchain>=0.1.0
+langchain-community>=0.0.20
+
+# --- Phase 5 : RAG ---
+chromadb>=0.4.22       # local vector store, no server needed
+langchain-text-splitters>=0.0.1
+
+# --- Phase 6 : evaluation ---
+rouge-score>=0.1.2
+bert-score>=0.3.13
+spacy>=3.7.0
+# scispaCy model for biomedical NER : install separately
+# pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_md-0.5.4.tar.gz
+
+# --- Phase 7 : demo ---
+gradio>=4.16.0
+
+# --- Dev ---
+jupyter>=1.0.0
+pytest>=7.4.0
+black>=23.12.0
+ruff>=0.1.0
